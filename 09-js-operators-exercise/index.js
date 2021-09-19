@@ -6,7 +6,12 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function sum(a, b){
+    a = 1;
+    b = 2;
+    ab = a + b;
+    return ab;
+}
 /**
  * Exercise #2
  *
@@ -16,7 +21,12 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function subtract(a, b){
+    a = 10;
+    b = 3;
+    ab = a - b;
+    return ab;
+}
 /**
  * Exercise #3
  *
@@ -25,7 +35,12 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function multiply(a, b){
+    a = 5;
+    b = 4;
+    ab = a * b;
+    return ab;
+}
 /**
  * Exercise #4
  *
@@ -35,7 +50,12 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function divide(a, b){
+    a = 49;
+    b = 7;
+    ab = a / b;
+    return ab;
+}
 /**
  * Exercise #5
  *
@@ -45,7 +65,12 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function getRemainder(a, b){
+    a = 18;
+    b = 8;
+    ab = a % b;
+    return ab;
+}
 /**
  * Exercise #6
  *
@@ -54,7 +79,11 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function increment(x){
+    x = x++;
+    return x;
+}
+console.log(increment(13));
 /**
  * Exercise #7
  *
@@ -63,3 +92,8 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
+function decrement(y){
+    y = y--;
+    return y;
+}
+console.log(decrement(13));

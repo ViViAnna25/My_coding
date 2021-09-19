@@ -3,12 +3,14 @@
  *
  * create variable {age} and assign your age as a value;
  */
+const age = 18;
 
 /**
  * Exercise 2
  *
  * create variable {favoriteLanguage} and assign "JavaScript" as a value;
  */
+const favoriteLanguage = "JavaScript";
 
 /**
  * Exercise 4
@@ -16,6 +18,7 @@
  * create variable {favoriteCity} and assign "London", "Paris", "Milan"
  * or "Barcelona" as a value;
  */
+const favoriteCity = "London";
 
 /**
  * Exercise 5
@@ -27,7 +30,10 @@
  * use "OR" operators(google, if you
  * don't know what is that) to write a condition
  */
-
+function isAccessGranted(age, favoriteLanguage) {
+  if (age >= 18 || favoriteLanguage == "JavaScript") return true;
+  else return false;
+}
 /**
  * Exercise 6
  *
@@ -38,7 +44,11 @@
  * Use "AND" operator (google, if you don't know what is that) to write
  * a condition that will take
  */
-
+function greeting(age, favoriteLanguage) {
+  if (age >= 18 && favoriteLanguage == "JavaScript")
+    return "You are a frontend developer";
+  else return "You pick the wrong career";
+}
 /**
  * Exercise 7
  *
@@ -46,7 +56,11 @@
  * "More than 10" if the number more than 10, "Less than 10" if it's
  * between 5 and 10 and "Less than 5" if it's less than 5
  */
-
+function checkTheNumber(x) {
+  if (x > 10) return "More than 10";
+  else if (x < 10 && x > 5) return "Less than 10";
+  else if (x < 5) return "Less than 5";
+}
 /**
  * Exercise 8
  *
@@ -60,3 +74,18 @@
  *
  * use "switch" for this exercise
  */
+const cities = ["London", "Paris", "Milan", "Barcelona", "Kiev"];
+function greetOnLocalLanguage(favoriteCity) {
+  switch (favoriteCity) {
+    case "London":
+      return "Hello";
+    case "Paris":
+      return "Bonjour";
+    case "Milan":
+      return "Ciao";
+    case "Barcelona":
+      return "Hola";
+    default:
+      return "I don't speak your language";
+  }
+}
